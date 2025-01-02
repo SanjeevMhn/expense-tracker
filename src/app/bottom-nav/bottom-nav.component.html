@@ -1,0 +1,13 @@
+<nav class="bottom-nav">
+    <ul class="nav-list">
+        @for(item of menuItems;track item){
+            <li class="nav-item" [class.main]="item.name == 'add'">
+                <a [routerLink]="item.route" class="nav-link">
+                    <span class="icon-container" [innerHTML]="item.icon"></span>
+                    <span class="link-text">{{item.name}}</span>
+                </a>
+            </li>
+        }
+       
+    </ul>
+</nav>
