@@ -1,1 +1,19 @@
-<p>dashboard works!</p>
+<div class="container">
+  <nav class="dashboard-nav">
+    <ul class="nav-list">
+      <li class="nav-item">User</li>
+      <li class="nav-item">Search</li>
+      <li class="nav-item">Notify</li>
+    </ul>
+  </nav>
+  <div class="income-sources-container">
+    <ul class="income-sources">
+        @for(source of incomeSources; track source.id){
+        <li class="card e-wallet">
+            <app-card [source]="source"/>
+        </li>
+        }
+    </ul>
+    <button type="button">Add Source</button>
+  </div>
+</div>
