@@ -1,0 +1,9 @@
+.income-sources{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-y: auto;
+    .card{
+        flex: 0 0 70%;
+    }
+}
