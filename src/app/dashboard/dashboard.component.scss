@@ -3,6 +3,9 @@
     align-items: center;
     gap: 2rem;
     overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
     .card{
         flex: 0 0 70%;
     }
